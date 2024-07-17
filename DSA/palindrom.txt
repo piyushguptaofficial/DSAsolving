@@ -1,0 +1,35 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int palinfrom(int n) {
+    // Write C++ code here
+    // std::cout << "Try programiz.pro";
+    // int n = 123;
+    // int cnt = 0;
+    // int temp = n;
+    // while (n>0){
+    //     // cnt += 1;
+    //     // n = n/10;
+    //     n = n%10;
+    // }
+    // std::cout<<cnt;
+    // return temp;
+    int lastDigit = 0;
+    int temp = n;
+    int rev = 0;
+    while (n>0){
+        lastDigit = n%10;
+        n = n/10;
+        rev = (rev * 10) + lastDigit;
+        
+    }
+    if (temp == rev) cout<<"true";
+    else cout<<"false";
+    // return ;
+}
+int main(void)
+{
+    int n = 1331;
+    cout << palinfrom(n);
+    return 0;
+}

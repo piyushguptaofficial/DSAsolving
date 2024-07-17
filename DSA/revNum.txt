@@ -1,0 +1,32 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int rev(int n) {
+    // Write C++ code here
+    // std::cout << "Try programiz.pro";
+    // int n = 123;
+    // int cnt = 0;
+    // int temp = n;
+    // while (n>0){
+    //     // cnt += 1;
+    //     // n = n/10;
+    //     n = n%10;
+    // }
+    // // std::cout<<cnt;
+    // return temp;
+    int lastDigit = 0;
+    while (n>0){
+        lastDigit = n%10;
+        n = n/10;
+        int reverseNum = (reverseNum * 10) + lastDigit;
+    }
+    // return ;
+    
+    
+}
+int main(void)
+{
+    long long n = 345289467;
+    cout << "Number of digits : " << rev(n);
+    return 0;
+}
